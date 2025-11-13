@@ -1,0 +1,49 @@
+.card {
+  flex: 1;
+  padding: 0px;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  background-color: #fff;
+  gap: 1px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 8px 12px 8px 12px;
+
+    .text {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      margin: 0px;
+      align-self: center;
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      margin: 0px;
+      align-self: center;
+    }
+  }
+
+  .number {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    display: block;
+    padding: 8px 24px 4px 12px;
+  }
+
+  .description {
+    font-size: 11px;
+    font-weight: 400;
+    color: #666;
+    margin: 0;
+    font-family: 'SF Pro';
+    padding: 0px 24px 8px 12px;
+  }
+}

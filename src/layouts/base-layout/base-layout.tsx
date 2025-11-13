@@ -15,9 +15,14 @@ const BaseLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     () => [
       {
         key: '/',
-        label: <Link to="/">Dashboard</Link>,
+        label: <Link to="/">Home</Link>,
         icon: <HomeOutlined />,
       },
+      {
+        key: '/users/list',
+        label: <Link to="/users/list">Users list</Link>,
+        icon: <UserOutlined />,
+      }
     ],
     [],
   )
@@ -48,4 +53,4 @@ const BaseLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   )
 }
 
-export default BaseLayout
+export default BaseLayout;

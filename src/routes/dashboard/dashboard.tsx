@@ -1,13 +1,15 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { useTranslation } from 'react-i18next'
+import PageHeader from '../../components/PageHeader/PageHeader'
+import StatsSection from '../../components/StatsSection/StatsSection'
+import LastActiveUsers from '@/components/FiveActiveUsers/FiveActiveUsers'
+import styles from './dashboard.module.scss'
 
 const Dashboard: React.FunctionComponent = () => {
-  const { t } = useTranslation()
-
   return (
-    <div className="tw:p-4">
-      <h1 className="tw:text-2xl tw:font-bold mb-4">{t('dashboard.title')}</h1>
-      <p>{t('dashboard.description')}</p>
+    <div className={styles.pageWrapper}>
+      <PageHeader />
+      <StatsSection />
+      <LastActiveUsers />
     </div>
   )
 }
